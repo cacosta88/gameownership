@@ -1,51 +1,17 @@
-# 🏗 Scaffold-ETH
+# 🏗 Scaffold-ETH: Gamification to mitigate ownership concentration issues
 
-> everything you need to build on Ethereum! 🚀
+> The illustrative proof of concept app gamifies the minting of an on-chain NFT, providing a speedbump to mass
+            minting by any single actor. It accomplishes this by requiring that the player randomly draws a prime number
+            between 1 and 100 before being able to mint a NFT. Being able to win a portion of the accumulated balance
+            provides the risk/reward element of the game. The gameplay is designed to teach basic concepts of Ethereum
+            and blockchain technology to new users. 🚀
 
-🧪 Quickly experiment with Solidity using a frontend that adapts to your smart contract:
+> The smart contract `YourContract.sol` contains detailed comments regarding the relevant smart contract considerations for this build
 
-![image](https://user-images.githubusercontent.com/2653167/124158108-c14ca380-da56-11eb-967e-69cde37ca8eb.png)
+🔏 You can find the core smart contract `YourContract.sol` in `packages/hardhat/contracts`. You will need to update this file for your own subscrition ID (check out the constructor within the `YourContract.sol` file) to make it work.
+Go here (https://vrf.chain.link/) to create and manage your subscriptions (i.e. add your newly deployed smart contract to the list of consumers). 
 
-
-# 🏄‍♂️ Quick Start
-
-Prerequisites: [Node (v16 LTS)](https://nodejs.org/en/download/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
-
-> clone/fork 🏗 scaffold-eth:
-
-```bash
-git clone https://github.com/scaffold-eth/scaffold-eth.git
-```
-
-> install and start your 👷‍ Hardhat chain:
-
-```bash
-cd scaffold-eth
-yarn install
-yarn chain
-```
-
-> in a second terminal window, start your 📱 frontend:
-
-```bash
-cd scaffold-eth
-yarn start
-```
-
-> in a third terminal window, 🛰 deploy your contract:
-
-```bash
-cd scaffold-eth
-yarn deploy
-```
-
-🔏 Edit your smart contract `YourContract.sol` in `packages/hardhat/contracts`
-
-📝 Edit your frontend `App.jsx` in `packages/react-app/src`
-
-💼 Edit your deployment scripts in `packages/hardhat/deploy`
-
-📱 Open http://localhost:3000 to see the app
+📱 You will need to deploy it to Goerli to make it work
 
 # 📚 Documentation
 
